@@ -1,5 +1,6 @@
-.body{ 
-    background-image: url('../assets/pexels-karolina-grabowska-4021775.jpg');
+/* General styles (applies to all devices) */
+.body {
+    background-image: url('../assets/bgimg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -7,25 +8,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    color: #1b1b1b;
+    color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.container{
-    /* background-color: brown; */
-    width: 50%;
-    margin: 36px;
+
+.container {
+    width: 70%;
+    padding-left: 64px;
 }
-h1{
+
+h1 {
     font-size: 96px;
     padding: 0;
     margin: 0;
-    color: #1b1b1b;
-    text-shadow: 0px 0px 25px #ffcd29;
+    color: #fff;
 }
-h2{
+
+h2 {
     font-size: 24px;
+    letter-spacing: 2.5px;
 }
-button{
+
+button {
     background-color: #66eaae; 
     color: #2c2c2c; 
     border: none; 
@@ -40,12 +44,84 @@ button{
     transition: background-color 0.3s, transform 0.3s;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: #2c2c2c;
     color: #66eaae;
     transform: scale(1.05);
     box-shadow: 5px 8px 16px #153025;
+    text-shadow: 0px 0px 25px #66eaae;
 }
-p{
+
+p {
     font-size: 18px;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+    .body{
+        background-image: url('../assets/mobile.jpg');
+        /* background-size: cover; */
+    }
+    .container {
+        padding-left: 32px;
+    }
+
+    h1 {
+        font-size: 72px;
+        letter-spacing: 5PX;
+    }
+
+    h2 {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    button {
+        
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .body {
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px 20px;
+        width: 200px;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 16px;
+    }
 }
