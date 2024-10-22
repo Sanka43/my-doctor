@@ -10,8 +10,8 @@ function HomePage() {
   };
   return (
     <div className='body'>
-      <div className='container'>
-        <h1>My Doctor</h1>
+      <div className='home-container'>
+        <h1 className='title'>My Doctor</h1>
         <h2>Your Personal Healthcare Assistant</h2>
         <button onClick={handleChatNavigation}>Chat with My Doctor</button>
         <p>Our healthcare chatbot provides quick and reliable medical information at your fingertips. Whether you have questions about 
